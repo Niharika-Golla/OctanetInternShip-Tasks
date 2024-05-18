@@ -1,0 +1,169 @@
+/* General body and HTML styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black; 
+    color: white; 
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+/* Header styling */
+.header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+}
+.header span{
+    color: aqua;
+}
+/* Logo positioning */
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+/* Navigation styling */
+.nav {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    text-align: right;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.nav a:hover {
+    color: aqua;
+    border-bottom: 3px solid aqua;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.content h1 span{
+    color: aqua;
+}
+/*----------Programs-----------*/
+.programs {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #333; /* Dark background for contrast */
+}
+
+
+.program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns of equal width */
+    gap: 20px; /* Space between the grid items */
+    padding: 20px;
+    
+}
+
+.program {
+     /* Slightly lighter than the section background */
+    padding: 20px;
+    border-radius: 8px; /* Soft rounded corners for aesthetics */
+}
+
+.program h3 {
+    color: aqua; /* Aqua color for headings */
+}
+
+.program p {
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+/* Contact section adjustments */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    width: 100%;
+    padding-top: 100px; /* Space for fixed header/navigation */
+}
+
+.contact-left h1{
+  
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%; 
+   
+}
+.contact-left p{
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+.contact-left span{
+    color: aqua;
+}
+.contact-left p i{
+    color: aqua;
+}
+.contact-left p span{
+    color: aquamarine;
+}
+.social-icons {
+    margin-top: 30px; /* Increase top margin to add space above the icons */
+    margin-bottom: 30px; /* Increase bottom margin to add space below the icons */
+    display: flex;
+    justify-content: center; /* Keeps the icons centered */
+    width: 100%; /* Ensures the flex container takes full width */
+}
+
+.social-icons a {
+    font-size: 30px;
+    justify-content: center;
+    margin: 0 50px;
+    color: #ababab;
+    transition: transform 0.5s, color 0.5s;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px);
+    color: aqua;
+}
+
+/* Footer styling */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative; /* Changed from fixed to relative */
+    width: 100%;
+}
+.copyright i{
+    color: aqua;
+}
